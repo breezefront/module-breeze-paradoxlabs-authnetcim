@@ -1,0 +1,35 @@
+& when (@critical) {
+    .customer-paymentinfo-index {
+        .links a {
+            &:extend(.breeze-link all);
+        }
+        .manage-payment-method {
+            margin-top: @4;
+            h2 {
+                all: unset;
+            }
+            .box > form {
+                &:extend(.breeze-block-account-content all);
+            }
+        }
+    }
+}
+
+& when not (@critical) {
+    .credit-card-types {
+        display: flex;
+        gap: @1;
+        li:not(._active) {
+            filter: grayscale(100%);
+            opacity: .5;
+        }
+    }
+    .ccard.authnetcim {
+        .cvv {
+            width: 80px;
+            .note {
+                display: none;
+            }
+        }
+    }
+}
