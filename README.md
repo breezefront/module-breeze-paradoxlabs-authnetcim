@@ -12,8 +12,6 @@ bin/magento module:enable Swissup_BreezeParadoxlabsAuthnetcim
 
 ## Required patches
 
-paradoxlabs/authnetcim/view/base/web/js/view/customer/hosted/paymentinfo.js
-
 ```diff
 --- paradoxlabs/authnetcim/view/base/web/js/view/customer/hosted/paymentinfo.js
 +++ paradoxlabs/authnetcim/view/base/web/js/view/customer/hosted/paymentinfo.js
