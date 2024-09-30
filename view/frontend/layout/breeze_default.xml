@@ -16,6 +16,12 @@
                                     <item name="validator" xsi:type="string">Magento_Payment/js/model/credit-card-validation/credit-card-number-validator</item>
                                 </item>
                             </item>
+                            <item name="authnetcimAcceptjs" xsi:type="array">
+                                <item name="path" xsi:type="string">ParadoxLabs_Authnetcim/js/accept</item>
+                                <item name="enabled" xsi:type="helper" helper="Swissup\Breeze\Helper\Config::isEnabled">
+                                    <param name="authnetcim">payment/authnetcim/active</param>
+                                </item>
+                            </item>
                             <item name="authnetcimHostedPaymentInfo" xsi:type="array">
                                 <item name="path" xsi:type="string">ParadoxLabs_Authnetcim/js/view/customer/hosted/paymentinfo</item>
                                 <item name="enabled" xsi:type="helper" helper="Swissup\Breeze\Helper\Config::isEnabled">
@@ -30,6 +36,12 @@
                                     <item name="luhn10" xsi:type="string">Magento_Payment/js/model/credit-card-validation/credit-card-number-validator/luhn10-validator</item>
                                     <item name="types" xsi:type="string">Magento_Payment/js/model/credit-card-validation/credit-card-number-validator/credit-card-type</item>
                                 </item>
+                            </item>
+                            <item name="authorizeNetAcceptjs" xsi:type="array">
+                                <item name="path" xsi:type="string">https://js.authorize.net/v1/Accept.js</item>
+                            </item>
+                            <item name="authorizeNetAcceptjsSandbox" xsi:type="array">
+                                <item name="path" xsi:type="string">https://jstest.authorize.net/v1/Accept.js</item>
                             </item>
                         </item>
                     </item>
